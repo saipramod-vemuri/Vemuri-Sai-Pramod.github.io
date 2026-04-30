@@ -257,6 +257,8 @@
     gap: 24px; align-items: start;
     transition: border-color 0.3s, transform 0.3s;
     position: relative; overflow: hidden;
+    text-decoration: none; /* Removing default link styling */
+    color: inherit;
   }
   .project-card::after {
     content: ''; position: absolute; inset: 0;
@@ -541,7 +543,8 @@
   <h2 class="section-title reveal">Selected Projects</h2>
   <div class="projects-grid">
 
-    <div class="project-card reveal">
+    <!-- PROJECT 1: LEGAL CONNECT -->
+    <a href="https://github.com/saipramod-vemuri/complaint-lawyer-link" target="_blank" class="project-card reveal">
       <div>
         <div class="project-num">01 / Full-Stack Application</div>
         <div class="project-title">Legal Connect</div>
@@ -549,8 +552,6 @@
           A role-based legal case management platform connecting clients and attorneys. Features JWT authentication, RBAC, 
           real-time case tracking, and analytics dashboards. Engineered for scalability with a modular Node.js backend architecture.
         </p>
-        <a href="https://github.com/saipramod-vemuri/Food-Delivery-WEB-APP" target="_blank" class="project-arrow">↗</a>
-
         <div class="project-stack">
           <span class="stack-tag">React.js</span>
           <span class="stack-tag">Node.js</span>
@@ -561,9 +562,10 @@
         </div>
       </div>
       <div class="project-arrow">↗</div>
-    </div>
+    </a>
 
-    <div class="project-card reveal">
+    <!-- PROJECT 2: FOOD DELIVERY -->
+    <a href="https://github.com/saipramod-vemuri/Food-Delivery-WEB-APP" target="_blank" class="project-card reveal">
       <div>
         <div class="project-num">02 / MERN Stack</div>
         <div class="project-title">Food Delivery Platform</div>
@@ -580,8 +582,9 @@
         </div>
       </div>
       <div class="project-arrow">↗</div>
-    </div>
+    </a>
 
+    <!-- PROJECT 3: CHURN PREDICTION -->
     <div class="project-card reveal">
       <div>
         <div class="project-num">03 / Machine Learning</div>
@@ -598,7 +601,7 @@
           <span class="stack-tag">Logistic Regression</span>
         </div>
       </div>
-      <div class="project-arrow">↗</div>
+      <div class="project-arrow" style="opacity: 0.3;">↗</div>
     </div>
 
   </div>
@@ -657,7 +660,7 @@
       <div class="cert-title">TCP/IP and Advanced Topics</div>
       <div class="cert-issuer">University of Colorado System</div>
      <div class="cert-title">Create a Financial Statement using Microsoft Excel</div>
-            <div class="cert-issuer">Coursera</div>
+      <div class="cert-issuer">Coursera</div>
     </div>
   </div>
 </section>
