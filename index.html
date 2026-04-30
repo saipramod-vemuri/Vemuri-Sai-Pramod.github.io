@@ -257,7 +257,7 @@
     gap: 24px; align-items: start;
     transition: border-color 0.3s, transform 0.3s;
     position: relative; overflow: hidden;
-    text-decoration: none; /* Removing default link styling */
+    text-decoration: none;
     color: inherit;
   }
   .project-card::after {
@@ -570,7 +570,7 @@
         <div class="project-num">02 / MERN Stack</div>
         <div class="project-title">Food Delivery Platform</div>
         <p class="project-desc">
-          End-to-end food ordering system with real-time cart management, order placement, and tracking. 
+          End-to-end food ordering system with real-time cart management, order placement, and tracking.
           Optimized MongoDB schemas with indexing, secure auth workflows, and a fully responsive mobile-first UI.
         </p>
         <div class="project-stack">
@@ -585,24 +585,24 @@
     </a>
 
     <!-- PROJECT 3: CHURN PREDICTION -->
-    <div class="project-card reveal">
+    <a href="https://github.com/saipramod-vemuri/churn-prediction-telecom" target="_blank" class="project-card reveal">
       <div>
         <div class="project-num">03 / Machine Learning</div>
         <div class="project-title">Customer Churn Prediction</div>
         <p class="project-desc">
-          Supervised ML models (Logistic Regression, Decision Trees) to predict telecom customer churn. 
+          Supervised ML models (Logistic Regression, Decision Trees) to predict telecom customer churn.
           Full EDA pipeline with feature engineering, Scikit-learn modeling, and actionable business insights.
         </p>
         <div class="project-stack">
-          <span class="stack-tag">Python</span>
-          <span class="stack-tag">Scikit-learn</span>
-          <span class="stack-tag">Pandas</span>
-          <span class="stack-tag">EDA</span>
-          <span class="stack-tag">Logistic Regression</span>
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">EDA</span>
+          <span class="tag">Logistic Regression</span>
         </div>
       </div>
-      <div class="project-arrow" style="opacity: 0.3;">↗</div>
-    </div>
+      <div class="project-arrow">↗</div>
+    </a>
 
   </div>
 </section>
@@ -620,10 +620,10 @@
       <div class="exp-title">Web Developer Intern</div>
       <div class="exp-company">Connect2Park</div>
       <ul class="exp-list">
-        <li>Developed and deployed responsive web pages using React.js, HTML5, CSS3, and JavaScript, improving page load performance and cross-device compatibility.</li>
-        <li>Integrated RESTful APIs with cross-functional engineering teams, ensuring seamless frontend-backend data flow.</li>
-        <li>Assisted in MongoDB schema updates and query optimization to support new application features.</li>
-        <li>Participated in Agile sprints, code reviews, and documentation, maintaining high code quality throughout.</li>
+        <li>Developed and deployed responsive web pages using React.js, HTML5, CSS3, and JavaScript.</li>
+        <li>Integrated RESTful APIs with engineering teams to ensure frontend-backend flow.</li>
+        <li>Assisted in MongoDB schema updates to support application features.</li>
+        <li>Participated in Agile sprints and code reviews to maintain code quality.</li>
       </ul>
     </div>
   </div>
@@ -670,7 +670,7 @@
   <div class="section-label reveal" style="justify-content:center">Contact</div>
   <h2 class="section-title reveal" style="text-align:center; letter-spacing:-2px">Let's build<br/>something great.</h2>
   <p class="reveal" style="color:var(--muted); max-width:440px; margin:0 auto; text-align:center; line-height:1.8">
-    I'm actively looking for full-time opportunities in full-stack development. Open to internships, projects, and collaborations too.
+    I'm actively looking for full-time opportunities in full-stack development. Open to projects and collaborations.
   </p>
   <div class="reveal" style="text-align:center">
     <a href="mailto:vemuri.saipramodchowdary@gmail.com" class="contact-email">
@@ -692,7 +692,6 @@
 </footer>
 
 <script>
-  // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
@@ -712,7 +711,6 @@
   }
   animateRing();
 
-  // Project card mouse glow
   document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mousemove', e => {
       const r = card.getBoundingClientRect();
@@ -723,7 +721,6 @@
     });
   });
 
-  // Scroll reveal
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
